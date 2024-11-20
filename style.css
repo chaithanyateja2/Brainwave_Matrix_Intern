@@ -1,0 +1,305 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FCF6ED; /* Beige */
+    color: #333; /* Neutral Text */
+    line-height: 1.6;
+}
+body {
+    background-image: url('Back-1.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-repeat: no-repeat; /* Avoids repeating the image */
+  }
+  
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #D4A373; /* Warm Brown */
+    color: #FCF6ED; /* Beige */
+}
+
+/* Oval Shape on Scroll */
+.navbar.scroll {
+    background-color: #D4A373;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hello-text h1 {
+    font-size: 3rem;
+    color: #D4A373; /* Warm Brown */
+    transition: all 0.5s ease;
+}
+
+.hello-text .intro-text h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.hello-text .intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Ensures both sections stretch to equal height */
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #F9F3DF; /* Ivory */
+}
+
+.about-left,
+.about-right {
+    flex: 1 1 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #EDE4D1; /* Default background color for both sections */
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment for content */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Keeps content aligned neatly */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for both */
+}
+
+.about-left:hover,
+.about-right:hover {
+    transform: translateY(-5px); /* Smooth hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 200px; /* Smaller photo size for neatness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular photo */
+    margin-bottom: 20px;
+    border: 3px solid #FCF6ED; /* Add subtle border for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+    flex: 1 1 45%;
+    background-color: #FCF6ED; /* Light beige */
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.about-right h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-right ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-right ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.about-right ul ul {
+    padding-left: 20px;
+    margin-top: 5px;
+    list-style-type: disc;
+}
+
+.about-right ul ul li {
+    margin-bottom: 5px;
+}
+
+.about-right ul li strong {
+    color: #007BFF;
+}
+
+
+/* Resume Button */
+.resume-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #FCF6ED;
+}
+
+.resume-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #D4A373; /* Warm Brown */
+    color: #FCF6ED; /* Beige */
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #B3865C; /* Slightly darker shade */
+}
+
+/* Projects Section */
+.projects,
+.internships,
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #F9F3DF; /* Ivory */
+}
+
+.projects h2,
+.internships h2,
+.contact h2 {
+    margin-bottom: 20px;
+    color: #D4A373;
+}
+
+.project-list,
+.internship-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item,
+.internship-item {
+    background-color: #EDE4D1; /* Slightly darker Ivory */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.project-item img,
+.internship-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-item:hover,
+.internship-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FCF6ED; /* Beige */
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #D4A373;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #B3865C; /* Slightly darker */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left,
+    .about-right {
+        flex: 1 1 100%;
+    }
+
+    .project-item,
+    .internship-item {
+        max-width: 100%;
+    }
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    font-size: 14px;
+    position: relative; /* Use fixed if you want it always at the bottom */
+    bottom: 0;
+    width: 100%;
+  }
+  
